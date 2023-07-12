@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch-a-sketch</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Etch-a-sketch</h1>
+    <div class="container">
+        <div class="leftBar">
+            <input id="colorPicker" type="color" value="#333333" />
+            <button class='myButtons' id="colorMode">Color Mode</button>
+            <button class='myButtons' id="rainbowMode">Rainbow Mode</button>
+            <button class='myButtons' id="eraserMode">Erase Mode</button>
+            <button class='myButtons' id="clear">Clear</button>
+        </div>
+        <div class="drawingBox" id="drawingBox">
+            
+        </div>
+        <div class="gridSize">
+            <label for="inputBar">Select grid size:</label>
+            <input type="range" id="inputBar" name="inputBar" min="16" max="64" value="16">
+            <p>Grid Size: <span id="inputValue">16x16</span></p>
+        </div>
+    </div>
+    <div class="footerDiv">
+        <p id="footer">Caution: Reselecting the grid size will erase the sketch</p>
+    </div>
+   
+    <script src="index.js"></script>
+</body>
+</html>
